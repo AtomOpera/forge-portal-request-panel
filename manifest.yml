@@ -1,0 +1,18 @@
+modules:
+  jiraServiceManagement:portalRequestCreatePropertyPanel:
+    - key: forge-portal-panel-hello-world-portal-request-create-property-panel
+      resource: main
+      resolver:
+        function: resolver
+      render: native
+      title: forge-portal-panel
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: src/frontend/index.jsx
+app:
+  runtime:
+    name: nodejs18.x
+  id: ari:cloud:ecosystem::app/93ae92f7-7527-42b8-a878-41d5da042bd6
